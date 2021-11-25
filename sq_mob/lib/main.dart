@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+
+import 'package:sq_mob/constants.dart';
+import 'package:sq_mob/screens/home_screen.dart';
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.light().copyWith(
+        backgroundColor: const Color(0xfffff5eb),
+      ),
+      title: kAppTitle,
+      home: const HomeScreen(),
+    );
+  }
+}
